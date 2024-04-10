@@ -1,0 +1,75 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* banking_mandate_by_email
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-10 16:18+0000\n"
+"PO-Revision-Date: 2024-04-10 16:18+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: banking_mandate_by_email
+#: model:mail.template,body_html:banking_mandate_by_email.email_template_banking_mandate
+msgid ""
+"<div>\n"
+"                    <p>Dear <t t-out=\"object.partner_id.name\"/>,</p>\n"
+"                    <p>\n"
+"                        Here is, in attachment, your mandate <t t-out=\"object.unique_mandate_reference\"/>.<br/>\n"
+"                        Please return the attached file correctly completed and signed.\n"
+"                    </p>\n"
+"                    <p>Thank you,</p>\n"
+"                    <p style=\"color:#888888\"><t t-out=\"object.company_id.name\"/></p>\n"
+"                </div>\n"
+"            "
+msgstr ""
+"<div>\n"
+"                    <p>Estimado/a <t t-out=\"object.partner_id.name\"/>,</p>\n"
+"                    <p>\n"
+"                        Aquí tiene, en el adjunto, su mandato <t t-out=\"object.unique_mandate_reference\"/>.<br/>\n"
+"                        Por favor retorne el archivo adjunto correctamente completo y firmado.\n"
+"                    </p>\n"
+"                    <p>Muchas gracias,</p>\n"
+"                    <p style=\"color:#888888\"><t t-out=\"object.company_id.name\"/></p>\n"
+"                </div>\n"
+"            "
+
+#. module: banking_mandate_by_email
+#: model:ir.model,name:banking_mandate_by_email.model_account_banking_mandate
+msgid "A generic banking mandate"
+msgstr "Un mandato bancario genérico"
+
+#. module: banking_mandate_by_email
+#: model:mail.template,name:banking_mandate_by_email.email_template_banking_mandate
+msgid "Banking Mandates - Send by Email"
+msgstr "Mandatos bancarios - Enviar por correo electrónico"
+
+#. module: banking_mandate_by_email
+#: model_terms:ir.ui.view,arch_db:banking_mandate_by_email.send_email_view_mandate_form
+msgid "Send by e-mail"
+msgstr "Enviar por correo electrónico"
+
+#. module: banking_mandate_by_email
+#: model:ir.actions.server,name:banking_mandate_by_email.action_send_mail_template
+msgid "Send mail mandate"
+msgstr "Enviar mando"
+
+#. module: banking_mandate_by_email
+#: model:mail.template,report_name:banking_mandate_by_email.email_template_banking_mandate
+msgid "{{ (object.unique_mandate_reference or 'mandate_'(object.id)) }}"
+msgstr "{{ (object.unique_mandate_reference or 'mandato_'(object.id)) }}"
+
+#. module: banking_mandate_by_email
+#: model:mail.template,subject:banking_mandate_by_email.email_template_banking_mandate
+msgid ""
+"{{ object.company_id.name }} Mandate (Ref {{ object.display_name or 'n/a' "
+"}})"
+msgstr ""
+"{{ object.company_id.name }} Mandato (Ref {{ object.display_name or 'n/a' "
+"}})"
