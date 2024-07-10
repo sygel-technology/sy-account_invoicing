@@ -6,15 +6,15 @@
     "summary": "Put the Invoicing Menu inside the Accounting Menu",
     "version": "15.0.1.0.0",
     "category": "Accounting, Invoicing",
-    "website": "https://www.qubiq.es",
+    "website": "https://github.com/sygel-technology/sy-account-invoicing",
     "author": "QubiQ, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
     "depends": [
-        'account',
+        "account",
     ],
-    'data': [
-        'views/invoicing_in_accouting.xml',
+    "data": [
+        "views/invoicing_in_accouting.xml",
     ],
 }
